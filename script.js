@@ -23,6 +23,14 @@ function writePassword() {
   passwordText.value = password;
 
 }
+// prompts to confirm password requirements 
+function generatePassword() {
+  var passwordLength = prompt('Length of password. Please enter a number between 8 and 128');
+  var confirmLowerCase = prompt('Click confirm if you would like to use lower case characters.');
+  var confirmUpperCase = confirm('Click confirm if you would like to use upper case characters.');
+  var confirmNumber = confirm('Click confirm if you would like to use numbers.');
+  var confirmSpecialChar = confirm('Click confirm if you would like to use special characters.')
+}
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
